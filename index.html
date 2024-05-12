@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,8 +14,86 @@
             <input type="text" name="city" id="cityInput" placeholder="Enter city name" required>
             <button type="submit">Get Weather</button>
         </form>
-        <div id="weatherInfo"></div>
+        <div id="weatherInfo" class="hidden weather-info">
+            <!-- Static divs for data -->
+            <div class="weather-data">
+                <div id="name"></div>
+                <div class="static-data">Name</div>
+            </div>
+
+            <div class="weather-data">
+                <div id="weather"></div>
+                <div class="static-data">Weather</div>
+            </div>
+
+            <div class="weather-data">
+                <div id="temperature"></div>
+                <div class="static-data">Temperature (°C)</div>
+            </div>
+
+            <div class="weather-data">
+                <div id="weatherTime"></div>
+                <div class="static-data">Time</div>
+            </div>
+
+            <div class="weather-data">
+                <div id="dewPoint"></div>
+                <div class="static-data">Dew Point</div>
+            </div>
+
+            <div class="weather-data">
+                <div id="weatherHumidity"></div>
+                <div class="static-data">Humidity</div>
+            </div>
+
+            <div class="weather-data">
+                <div id="weatherCloudBase"></div>
+                <div class="static-data">Cloud Base</div>
+            </div>
+            
+            <div class="weather-data">
+                <div id="weatherCloudCover"></div>
+                <div class="static-data">Cloud Cover</div>
+            </div>
+
+            <div class="weather-data">
+                <div id="preciProb"></div>
+                <div class="static-data">Precipitation Probability</div>
+            </div>
+
+            <div class="weather-data">
+                <div id="pressureSurfLevel"></div>
+                <div class="static-data">Pressure Surface Level</div>
+            </div>
+
+            <div class="weather-data">
+                <div id="rainIntensity"></div>
+                <div class="static-data">Rain Intensity</div>
+            </div>
+
+            <div class="weather-data">
+                <div id="uvIndex"></div>
+                <div class="static-data">UV Index</div>
+            </div>
+
+            <div class="weather-data">
+                <div id="visibility"></div>
+                <div class="static-data">Visibility</div>
+            </div>
+
+            <div class="weather-data">
+                <div id="windDirection"></div>
+                <div class="static-data">Wind Direction</div>
+            </div>
+
+            <div class="weather-data">
+                <div id="windSpeed"></div>
+                <div class="static-data">Wind Speed</div>
+            </div>
+
+            <!-- Add more divs for other data values -->
+        </div>
     </div>
-    <script src="script.js"></script>
+    <script src="script3.js"></script>
 </body>
 </html>
