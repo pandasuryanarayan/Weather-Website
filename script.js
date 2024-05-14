@@ -89,7 +89,8 @@ function displayCities(filteredCities) {
     allMatches.forEach((city) => {
       const cityItem = document.createElement("div");
       cityItem.textContent = city;
-      cityListDiv.style.height = "355px"; // 355px
+      cityListDiv.style.minHeight = "100px";
+      cityListDiv.style.maxHeight = "355px"; // 355px
       cityItem.style.padding = "5px";
       cityListDiv.style.overflowY = "auto";
 
