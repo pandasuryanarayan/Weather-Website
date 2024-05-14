@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>मौसम</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="cloud-solid.svg" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h1>मौसम</h1>
+        <form id="weatherForm">
+            <input type="text" name="city" id="cityInput" placeholder="शहर का नाम दर्ज करें" required>
+            <button type="submit">मौसम प्राप्त करें</button>
+        </form>
+        <div id="weatherInfo" class="hidden weather-info">
+            <!-- Static divs for data -->
+            <div class="weather-data">
+                <div id="name"></div>
+                <div class="static-data">नाम</div>
+            </div>
+
+            <div class="weather-data">
+                <div id="weather"></div>
+                <div class="static-data">मौसम</div>
+            </div>
+
+            <div class="weather-data">
+                <div id="temperature"></div>
+                <div class="static-data">तापमान (°C)</div>
+            </div>
+
+            <div class="weather-data">
+                <div id="weatherTime"></div>
+                <div class="static-data">समय</div>
+            </div>
+
+            <div class="weather-data">
+                <div id="dewPoint"></div>
+                <div class="static-data">ओसांक</div>
+            </div>
+
+            <div class="weather-data">
+                <div id="weatherHumidity"></div>
+                <div class="static-data">नमी</div>
+            </div>
+
+            <div class="weather-data">
+                <div id="weatherCloudBase"></div>
+                <div class="static-data">बादल आधार</div>
+            </div>
+            
+            <div class="weather-data">
+                <div id="weatherCloudCover"></div>
+                <div class="static-data">बादल आवरण</div>
+            </div>
+
+            <div class="weather-data">
+                <div id="preciProb"></div>
+                <div class="static-data">वर्षा संभावना</div>
+            </div>
+
+            <div class="weather-data">
+                <div id="pressureSurfLevel"></div>
+                <div class="static-data">सतह दबाव</div>
+            </div>
+
+            <div class="weather-data">
+                <div id="rainIntensity"></div>
+                <div class="static-data">वर्षा तीव्रता</div>
+            </div>
+
+            <div class="weather-data">
+                <div id="uvIndex"></div>
+                <div class="static-data">यूवी सूचकांक</div>
+            </div>
+
+            <div class="weather-data">
+                <div id="visibility"></div>
+                <div class="static-data">दृश्यता</div>
+            </div>
+
+            <div class="weather-data">
+                <div id="windDirection"></div>
+                <div class="static-data">पवन दिशा</div>
+            </div>
+
+            <div class="weather-data">
+                <div id="windSpeed"></div>
+                <div class="static-data">पवन गति</div>
+            </div>
+
+            <!-- Add more divs for other data values -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
